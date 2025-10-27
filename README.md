@@ -39,19 +39,20 @@ curl -i http://localhost:8080/version
 
 curl -X POST "http://localhost:8081/chaos/stop"
 
-# Manual toggle of ACTIVE_POOL:
+ Manual toggle of ACTIVE_POOL:
 
-# If you change .env ACTIVE_POOL, restart the nginx container so it gets the updated env:
+ If you change .env ACTIVE_POOL, restart the nginx container so it gets the updated env:
 
 docker compose restart nginx
 
-# or
+ or
 
 docker compose up -d --force-recreate nginx
 
-# Alternatively, within the running container you can re-render/reload if you updated the template or environment
+ Alternatively, within the running container you can re-render/reload if you updated the template or environment
 
-# (Note: changing host .env doesn't change container env. To pick a new ACTIVE_POOL the container must be restarted.)
+ (Note: changing host .env doesn't change container env. To pick a new ACTIVE_POOL the container must be restarted.)
 
 docker exec bg_nginx /reload_nginx.sh
+
 
