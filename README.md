@@ -15,11 +15,11 @@
 
 curl -i http://localhost:8080/version
 
-# Expect 200 and headers:
+ Expect 200 and headers:
 
-# X-App-Pool: blue
+ X-App-Pool: blue
 
-# X-Release-Id: <RELEASE_ID_BLUE>
+ X-Release-Id: <RELEASE_ID_BLUE>
 
 # Start chaos on Blue (grader uses this)
 
@@ -29,11 +29,11 @@ curl -X POST "http://localhost:8081/chaos/start?mode=error"
 
 curl -i http://localhost:8080/version
 
-# Expect 200 and headers:
+ Expect 200 and headers:
 
-# X-App-Pool: green
+ X-App-Pool: green
 
-# X-Release-Id: <RELEASE_ID_GREEN>
+ X-Release-Id: <RELEASE_ID_GREEN>
 
 # Stop chaos:
 
@@ -54,3 +54,4 @@ docker compose up -d --force-recreate nginx
 # (Note: changing host .env doesn't change container env. To pick a new ACTIVE_POOL the container must be restarted.)
 
 docker exec bg_nginx /reload_nginx.sh
+
