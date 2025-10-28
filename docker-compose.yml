@@ -1,44 +1,3 @@
-# version: "3.8"
-
-# services:
-#   nginx:
-#     image: nginx:1.25
-#     container_name: bg_nginx
-#     ports:
-#       - "8080:8080"
-#     env_file:
-#       - .env
-#     volumes:
-#       - ./nginx/nginx.conf.template:/etc/nginx/nginx.conf.template:ro
-#       - ./nginx/docker-entrypoint.sh:/docker-entrypoint.sh:ro
-#     entrypoint: ["/bin/sh", "/docker-entrypoint.sh"]
-#     depends_on:
-#       - app_blue
-#       - app_green
-#     restart: unless-stopped
-
-#   app_blue:
-#     image: ${BLUE_IMAGE}
-#     container_name: app_blue
-#     environment:
-#       - RELEASE_ID=${RELEASE_ID_BLUE}
-#       - PORT=${PORT:-8081}
-#       - APP_POOL=blue
-#     ports:
-#       - "8081:8081" # grader will call /chaos on this port
-#     restart: unless-stopped
-
-#   app_green:
-#     image: ${GREEN_IMAGE}
-#     container_name: app_green
-#     environment:
-#       - RELEASE_ID=${RELEASE_ID_GREEN}
-#       - PORT=${PORT:-8082}
-#       - APP_POOL=green
-#     ports:
-#       - "8082:8082" # grader will call /chaos on this port
-#     restart: unless-stopped
-
 version: "3.8"
 
 services:
@@ -52,6 +11,8 @@ services:
     environment:
       # Controls which pool is primary (blue|green)
       ACTIVE_POOL: ${ACTIVE_POOL:-blue}
+    networks:
+      - hngi13-stage2-net
     volumes:
       - ./nginx/nginx.conf.template:/etc/nginx/nginx.conf.template:ro
       - ./nginx/docker-entrypoint.sh:/docker-entrypoint.sh:ro
@@ -70,6 +31,8 @@ services:
       - APP_POOL=blue
     ports:
       - "8081:3000" # grader will call /chaos on this port
+    networks:
+      - hngi13-stage2-net
     healthcheck:
       test:
         [
@@ -90,6 +53,8 @@ services:
       - APP_POOL=green
     ports:
       - "8082:3000" # grader will call /chaos on this port
+    networks:
+      - hngi13-stage2-net
     healthcheck:
       test:
         [
@@ -102,5 +67,5 @@ services:
       start_period: 5s
 
 networks:
-  default:
-    name: hngi13-stage2-net
+  hngi13-stage2-net:
+    driver: bridge
