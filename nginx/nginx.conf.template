@@ -4,67 +4,75 @@ error_log  /var/log/nginx/error.log warn;
 pid        /var/run/nginx.pid;
 
 events {
-    worker_connections  1024;
+    worker_connections 1024;
 }
 
 http {
-    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
-                      '$status $body_bytes_sent "$http_referer" '
-                      '"$http_user_agent" "$request_time" "$upstream_response_time" "$upstream_addr"';
+    # Logging
+    access_log /var/log/nginx/access.log;
+    error_log /var/log/nginx/error.log warn;
 
-    access_log  /var/log/nginx/access.log  main;
-
-    sendfile        on;
-    tcp_nopush      on;
-    tcp_nodelay     on;
-    keepalive_timeout  65;
-    types_hash_max_size 2048;
-
-    upstream backend {
-        # Primary (fast fail detection)
-        server ${PRIMARY_HOST}:${PRIMARY_PORT} max_fails=1 fail_timeout=2s;
-        # Backup - will be used when primary fails
-        server ${BACKUP_HOST}:${BACKUP_PORT} backup;
+    # Upstream configuration for Blue/Green deployment
+    upstream app_backend {
+        # Active pool (primary)
+        server app_ACTIVE_POOL:APP_PORT max_fails=2 fail_timeout=5s;
+        
+        # Backup pool (standby)
+        server app_BACKUP_POOL:APP_PORT backup;
     }
 
     server {
-        listen 8080;
+        listen 80;
+        server_name localhost;
 
-        # Proxy /version and other endpoints to the backend upstream
+        # Proxy settings to preserve headers and handle failures
+        proxy_pass_request_headers on;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+
+        # Timeout settings - aggressive for fast failover
+        proxy_connect_timeout 2s;
+        proxy_send_timeout 3s;
+        proxy_read_timeout 3s;
+
+        # Retry configuration
+        proxy_next_upstream error timeout http_500 http_502 http_503 http_504;
+        proxy_next_upstream_tries 2;
+        proxy_next_upstream_timeout 8s;
+
+        # Main location block
         location / {
-            # We want the client to never see stripped X-App-Pool/X-Release-Id headers.
-            # Do not use proxy_hide_header for those.
-            proxy_pass http://backend;
-            proxy_http_version 1.1;
-            proxy_set_header Host $host;
-            proxy_set_header X-Real-IP $remote_addr;
-            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-            proxy_set_header X-Forwarded-Proto $scheme;
-            proxy_pass_request_headers on;
-
-            # Timeouts - keep each request under the required limit
-            proxy_connect_timeout 1s;
-            proxy_send_timeout 5s;
-            proxy_read_timeout 8s;
-
-            # Retry logic: attempt the next upstream on error, timeout, and 5xx responses.
-            proxy_next_upstream error timeout http_500 http_502 http_503 http_504;
-            # Try at most once more (primary then backup)
-            proxy_next_upstream_tries 2;
-            # Allow up to ~9s to attempt next upstreams (must be less than your client limit)
-            proxy_next_upstream_timeout 9s;
-
-            # Preserve buffering behavior to avoid stripping headers
+            proxy_pass http://app_backend;
+            
+            # Ensure app headers are forwarded to client
+            proxy_pass_header X-App-Pool;
+            proxy_pass_header X-Release-Id;
+            
+            # Disable buffering for immediate response
             proxy_buffering off;
         }
 
-        # Optional: expose a direct health endpoint that proxies /healthz to apps
+        # Health check endpoint
         location /healthz {
-            proxy_pass http://backend/healthz;
-            proxy_set_header Host $host;
-            proxy_pass_request_headers on;
-            proxy_connect_timeout 1s;
-            proxy_read_timeout 3s;
+            proxy_pass http://app_backend/healthz;
+        }
+
+        # Version endpoint
+        location /version {
+            proxy_pass http://app_backend/version;
+        }
+
+        # Chaos endpoints (for testing)
+        location /chaos/ {
+            proxy_pass http://app_backend;
+        }
+
+        # Nginx status (optional, for monitoring)
+        location /nginx_status {
+            stub_status on;
+            access_log off;
         }
     }
 }

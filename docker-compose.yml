@@ -46,7 +46,7 @@ services:
     image: nginx:1.25
     container_name: bg_nginx
     ports:
-      - "8080:8080"
+      - "8080:80"
     env_file:
       - .env
     environment:
@@ -66,19 +66,41 @@ services:
     container_name: app_blue
     environment:
       - RELEASE_ID=${RELEASE_ID_BLUE}
-      - PORT=${PORT:-8081}
+      - PORT=${PORT:-3000}
       - APP_POOL=blue
     ports:
-      - "8081:8081" # grader will call /chaos on this port
-    restart: unless-stopped
+      - "8081:3000" # grader will call /chaos on this port
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "wget -qO- http://localhost:${PORT:-3000}/healthz || exit 1",
+        ]
+      interval: 5s
+      timeout: 2s
+      retries: 3
+      start_period: 5s
 
   app_green:
     image: ${GREEN_IMAGE}
     container_name: app_green
     environment:
       - RELEASE_ID=${RELEASE_ID_GREEN}
-      - PORT=${PORT_GREEN:-8082}
+      - PORT=${PORT:-3000}
       - APP_POOL=green
     ports:
-      - "8082:8082" # grader will call /chaos on this port
-    restart: unless-stopped
+      - "8082:3000" # grader will call /chaos on this port
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "wget -qO- http://localhost:${PORT:-3000}/healthz || exit 1",
+        ]
+      interval: 5s
+      timeout: 2s
+      retries: 3
+      start_period: 5s
+
+networks:
+  default:
+    name: hngi13-stage2-net
