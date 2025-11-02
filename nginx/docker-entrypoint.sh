@@ -127,6 +127,7 @@ else
   export BACKUP_PORT=3000
 fi
 envsubst '${PRIMARY_HOST} ${PRIMARY_PORT} ${BACKUP_HOST} ${BACKUP_PORT}' < /etc/nginx/nginx.conf.template > /etc/nginx/nginx.conf
+
 nginx -s reload
 echo "Reload complete!"
 EOF

@@ -16,11 +16,19 @@ services:
     volumes:
       - ./nginx/nginx.conf.template:/etc/nginx/nginx.conf.template:ro
       - ./nginx/docker-entrypoint.sh:/docker-entrypoint.sh:ro
+      - nginx_logs:/var/log/nginx:rw
     entrypoint: ["/bin/sh", "/docker-entrypoint.sh"]
     depends_on:
       - app_blue
       - app_green
     restart: unless-stopped
+    command: >
+      /bin/sh -c "
+      mkdir -p /var/log/nginx && \
+      chmod +x /docker-entrypoint.sh && \
+      /docker-entrypoint.sh && \
+      nginx -g 'daemon off;'
+      "
 
   app_blue:
     image: ${BLUE_IMAGE}
@@ -66,6 +74,38 @@ services:
       retries: 3
       start_period: 5s
 
+  alert_watcher:
+    image: python:3.11-slim
+    container_name: alert_watcher
+    env_file:
+      - .env
+    environment:
+      - SLACK_WEBHOOK_URL=${SLACK_WEBHOOK_URL}
+      - ERROR_RATE_THRESHOLD=${ERROR_RATE_THRESHOLD}
+      - WINDOW_SIZE=${WINDOW_SIZE:-200}
+      - ALERT_COOLDOWN_SEC=${ALERT_COOLDOWN_SEC:-300}
+      - MAINTENANCE_MODE=${MAINTENANCE_MODE:-0}
+      - MIN_FLIP_CONFIRM=${MIN_FLIP_CONFIRM:-3}
+      - NGINX_LOG_PATH=/var/log/nginx/access.log
+      - NGINX_CONTAINER=bg_nginx
+      - ACTIVE_POOL=${ACTIVE_POOL:-blue}
+    working_dir: /app
+    command: >
+      /bin/sh -c "pip install --no-cache-dir -r requirements.txt &&
+      python -u watcher.py"
+    volumes:
+      - ./watcher.py:/app/watcher.py:rw
+      - ./requirements.txt:/app/requirements.txt:rw
+      - nginx_logs:/var/log/nginx
+    networks:
+      - hngi13-stage2-net
+    restart: unless-stopped
+    depends_on:
+      - nginx
+
 networks:
   hngi13-stage2-net:
     driver: bridge
+
+volumes:
+  nginx_logs: #shared volumes between nginx and alert_watcher

@@ -1,0 +1,108 @@
+2025/10/31 21:57:34 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 21:57:34 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 21:57:35 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 21:57:36 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 21:57:37 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 21:57:39 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 21:57:42 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 21:57:48 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 21:57:51 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 21:57:52 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 21:57:53 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 21:57:54 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 21:57:55 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 21:57:57 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 21:58:00 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 21:58:07 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 21:58:18 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 21:58:44 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 21:59:33 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:08:12 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:08:13 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:08:14 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:08:15 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:08:16 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:08:18 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:08:21 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:08:27 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:08:40 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:09:04 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:09:54 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:10:52 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:11:50 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:12:48 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:13:50 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:13:50 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:13:51 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:13:52 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:13:53 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:13:55 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:13:58 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:14:05 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:14:17 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:14:41 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:15:32 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:16:30 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:17:28 [emerg] 1#1: unknown log format "json.logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:18:26 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:19:30 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:19:31 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:19:32 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:19:33 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:19:34 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:19:35 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:19:39 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:19:45 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:19:57 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:20:23 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:21:12 [emerg] 1#1: unknown log format "json_logs" in /etc/nginx/nginx.conf:12
+2025/10/31 22:32:54 [warn] 13#13: *5 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/10/31 22:37:43 [warn] 16#16: *8 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/10/31 22:39:16 [warn] 15#15: *13 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/10/31 22:44:29 [warn] 19#19: *18 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 07:28:32 [warn] 25#25: *425 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:36 [warn] 13#13: *3 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:37 [warn] 14#14: *6 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:37 [warn] 15#15: *9 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:37 [warn] 17#17: *12 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:37 [warn] 16#16: *15 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:37 [warn] 18#18: *18 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:37 [warn] 19#19: *21 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:37 [warn] 20#20: *24 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:37 [warn] 21#21: *27 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:37 [warn] 22#22: *30 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:37 [warn] 23#23: *33 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:37 [warn] 24#24: *36 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:38 [warn] 25#25: *39 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:38 [warn] 26#26: *42 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:38 [warn] 27#27: *45 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:38 [warn] 12#12: *48 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:40 [warn] 13#13: *91 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:41 [warn] 14#14: *116 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:42 [warn] 15#15: *147 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:43 [warn] 17#17: *180 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:44 [warn] 16#16: *213 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:46 [warn] 18#18: *246 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:47 [warn] 19#19: *279 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:48 [warn] 20#20: *312 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:50 [warn] 21#21: *345 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:51 [warn] 22#22: *378 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:51 [warn] 23#23: *411 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:53 [warn] 24#24: *444 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:35:54 [warn] 25#25: *477 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:36:27 [warn] 25#25: *504 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:36:27 [warn] 26#26: *511 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:36:28 [warn] 27#27: *544 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:36:30 [warn] 12#12: *577 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:36:31 [warn] 13#13: *610 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:36:32 [warn] 14#14: *643 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:36:34 [warn] 15#15: *676 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:36:35 [warn] 17#17: *709 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:36:36 [warn] 16#16: *742 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:36:38 [warn] 18#18: *775 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:36:39 [warn] 19#19: *808 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:36:40 [warn] 20#20: *841 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:36:42 [warn] 21#21: *874 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:36:43 [warn] 22#22: *907 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:36:44 [warn] 23#23: *940 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
+2025/11/01 15:36:46 [warn] 24#24: *973 upstream server temporarily disabled while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /version HTTP/1.1", upstream: "http://172.19.0.2:3000/version", host: "localhost:8080"
